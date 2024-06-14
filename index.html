@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do List</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container fade-in">
+      <h3>To Do List</h3>
+      <div class="task-handle fade-in">
+        <input id="task" type="text" placeholder="Add a new task..." autocomplete="off">
+        <button class="add-task">Add Task</button>
+        <button class="update-task" style="display: none;">Update</button>
+        <button id="search1" class="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button id="search2" class="search"><i class="fa-solid fa-magnifying-glass"></i>&nbsp;&nbsp;Search a task</button>
+        <input id="search" type="text" placeholder="Search tasks..." style="display: none;">
+      </div>
+      <div id="error" class="fade-in"></div>
+      <button class="clear-task fade-in">Clear all tasks</button>
+      <div class="pending-task">
+        <div class="title fade-in "><h2>Pending Tasks</h2><i class="fa-solid fa-spinner"></i></div>
+      </div>
+      <div class="completed-task">
+        <div class="title fade-in"><h2>Completed Tasks</h2><i class="fa-solid fa-circle-check"></i></div>
+      </div>
+      <div class="rejected-task">
+        <div class="title fade-in"><h2>Rejected Tasks</h2><i class="fa-solid fa-circle-xmark"></i></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
